@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url(/images/bg-top.svg),
+    url(/images/bg-bottom.svg) ;
+    background-repeat: no-repeat,no-repeat;
+    background-position: top right,bottom left;
+    background-size:300px, 300px;
+    font-family: 'Montserrat', sans-serif;
+}
+main{
+    width: 100%;
+    height: 100%;
+    background: hsla(234, 14%, 74%,.5) ;
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.price{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+.toggle{
+    width: 50px;
+    height: 20px;
+    background:hsl(237, 63%, 64%) ;
+    border-radius: 10px;
+    padding: 2px;
+    cursor: pointer;
+    transition:linear .7s;
+}
+.inner-circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background:hsl(240, 78%, 98%) ;
+    transition:linear .7s;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.content-price1{
+    width: 300px;
+    height: 300px;
+    background:hsl(240, 78%, 98%) ;
+    border-radius: 10px;
+  text-align: center;
+  padding:10px 0 ;
+  
+}
+h4{
+    font-size: 20px;
+}
+.price1{
+    padding-top:20px;
+    font-size: 30px;
+    color:hsl(232, 13%, 33%);
+}
+.price1b{
+    display: none;
+}
+.content-price1 p{
+    padding-top: 15px;
+    font-size: 15px;
+}
+hr{
+    width: 80%;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+button{
+    width: 80%;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+   border: 1px solid hsl(234, 14%, 74%) ;
+   cursor: pointer;
+   color:hsl(240, 78%, 98%) ;
+   text-transform: uppercase;
+   background:linear-gradient( hsl(236, 72%, 79%),hsl(237, 63%, 64%)) ;
+}
+button:hover{
+     color:hsl(237, 63%, 64%) ;
+     background:hsl(240, 78%, 98%);
+    
+}
+.content-price2{
+    width: 350px;
+    height: 350px;
+    background:hsl(237, 63%, 64%) ;
+    border-radius: 10px;
+  text-align: center;
+  padding:20px 0 ;
+  color: #fff;
+  
+}
+.price2{
+    padding-top:20px;
+    font-size: 30px;
+    color:hsl(232, 13%, 33%);
+}
+.price2b{
+    display: none;
+}
+.price3{
+    padding-top:20px;
+    font-size: 30px;
+    color:hsl(232, 13%, 33%);
+}
+.price3b{
+    display: none;
+}
+.content-price2 p{
+    padding-top: 15px;
+    font-size: 15px;
+}
+.button{
+    width: 80%;
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 5px;
+   border: 1px solid hsl(234, 14%, 74%) ;
+   cursor: pointer;
+   color:hsl(237, 63%, 64%) ;
+   text-transform: uppercase;
+   background:white; 
+}
+.button:hover{
+    color:hsl(240, 78%, 98%) ;
+    background: hsl(237, 63%, 64%);
+}
+.price2{
+    padding-top:20px;
+    font-size: 30px;
+    color:#fff;
+}
+.inner-circle.active{
+    margin-left: 30px;
+}
+.toggle.active{
+background: hsl(236, 72%, 79%);
+
+}
+.price1.active{
+    display: none;
+}
+.price1b.active{
+    display: block;
+    padding-top:20px;
+    font-size: 30px;
+    color:hsl(232, 13%, 33%)  ;
+    
+}
+.price2.active{
+    display: none;
+}
+.price2b.active{
+    display: block;
+    padding-top:20px;
+    font-size: 30px;
+    color:#fff;
+    
+}
+.price3.active{
+    display: none;
+}
+.price3b.active{
+    display: block;
+    padding-top:20px;
+    font-size: 30px;
+    color:hsl(232, 13%, 33%);
+    
+}
+@media (max-width:700px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100vw;
+        height:auto ;
+    }
+    main{
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+        color: hsl(234, 14%, 74%) ;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 10px;
+    }
+    .content-price1{
+        width: 300px;
+        height: 300px;
+        background:hsl(240, 78%, 98%) ;
+        border-radius: 10px;
+      text-align: center;
+      padding:10px 0 ;
+      
+    }
+    .content-price2{
+        width: 300px;
+        height: 300px;
+        border-radius: 10px;
+      text-align: center;
+      padding:10px 0 ;
+      
+}
+}
